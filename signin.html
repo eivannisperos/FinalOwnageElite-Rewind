@@ -11,31 +11,31 @@
 
   <body>
     <nav id="main-nav">
-      <a class="nav-link mobile-icon-link" id="nav-toggle-area" href="#"><img id="nav-toggle" class="mobile-icon" src="img/menu-toggle.png" alt="menu toggle icon, press me to make the rest of the menu appear"/></a>
+      <a class="nav-link mobile-icon-link" href="#"><img id="nav-toggle" class="mobile-icon" src="img/menu-toggle.png" alt="menu toggle icon, press me to make the rest of the menu appear"/></a>
       <a class="nav-link" id="home-link-icon" href="index.html">REWIND</a>
       <a class="nav-link mobile-icon-link" id="search-toggle" href="#"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
       <div id="main-nav-bar-hidden">
-        <a class="hidden-link" href="signin.html">Users</a>
+        <a class="hidden-link" href="signin.html">Sign In</a>
+        <a class="hidden-link" href="products.html">Products</a>
         <a class="hidden-link" href="cart.html">Cart</a>
-        <a class="hidden-link" href="#">Contact</a>
+        <a class="hidden-link" href="contact.html">Contact</a>
       </div>
     </nav>
 
-    <section class="form-section-height" id="sign-in">
-      <div class="form-container" id="sign-in-content">
-        <h1 class="header-no-top-marigin">Sign In</h1>
-        <form id="sign-in-form" action="signin.html" method="GET">
-          <input type="text" id="username" name="user-name" placeholder="username" required/>
-          <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
-
-          <div id="button-div">
-            <input type="button" value="Register" onclick="location.href='register.html';" />
-            <input type="submit" value="Sign In" />
-          </div>
-
-          <a href="#" class="sub-button" id="password-reset-btn">Forgot Password?</a>
-        </form>
+    <section id="featured-listing" class="page-banner">
+      <div id="about-intro-content">
+        <h2 class="header-space">Sign In</h2>
       </div>
+    </section>
+
+    <section id="sign-in-content">
+      <form id="sign-in-form" action="signin.html" method="GET">
+        <input type="text" id="username" name="user-name" placeholder="username" required/>
+        <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
+        <a href="#" id="password-reset-btn">Forgot Password?</a>
+        <input type="submit" value="SIGN IN"/>
+        <button onclick="window.location='register.html'">SIGN UP</button>
+      </form>
     </section>
   </body>
 </html>
