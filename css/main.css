@@ -45,6 +45,10 @@ p {
   margin-top: 0;
 }
 
+.header-space {
+  margin-top: 3rem;
+}
+
 /*navigation
 nav - display set to flex to make it easier for alignment
 .mobile-icon - container for the3 images, acts as containers to links
@@ -117,6 +121,7 @@ nav - display set to flex to make it easier for alignment
 
 #about-para {
   color: white;
+  width: 85%;
 }
 
 /*featured listing*/
