@@ -91,7 +91,7 @@ nav - display set to flex to make it easier for alignment
 #main-nav-bar-hidden a {
   color: #F69261;
   text-decoration: none;
-  margin: 0 1rem 0 1rem;
+  margin-bottom: 1rem;
 }
 
 /*home page*/
