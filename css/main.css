@@ -54,14 +54,6 @@ nav - display set to flex to make it easier for alignment
   padding: 1em;
 }
 
-/*#main-nav-link-container {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  padding: 1em;
-  background-color: white;
-}*/
-
 .nav-link {
   color: #FD9264;
   text-decoration: none;
@@ -80,6 +72,26 @@ nav - display set to flex to make it easier for alignment
   font-family: 'rewind-font';
   margin: auto;
   margin-top: 0.3em;
+}
+
+/*main nav hiden*/
+#main-nav-bar-hidden {
+  background-color: white;
+  border-radius: 1em;
+  flex-direction: column;
+  position: absolute;
+  align-self: flex-end;
+  top: 1rem;
+  margin-top: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  width: 30%;
+}
+
+#main-nav-bar-hidden a {
+  color: #F69261;
+  text-decoration: none;
+  margin: 0 1rem 0 1rem;
 }
 
 /*home page*/
