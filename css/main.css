@@ -88,6 +88,13 @@ button {
   margin: 1rem;
 }
 
+.sub-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  color: #FD9264;
+  margin: 0;
+}
+
 
 /*navigation
 nav - display set to flex to make it easier for alignment
@@ -161,7 +168,7 @@ nav - display set to flex to make it easier for alignment
 
 #about-para {
   color: white;
-  width: 88%;
+  width: 85%;
 }
 
 /*featured listing*/
@@ -197,10 +204,6 @@ nav - display set to flex to make it easier for alignment
   justify-content: space-between;
 }
 
-#product-feature-top {
-  margin-top: 4.5rem;
-}
-
 /*footer*/
 
 #top-shortcut {
@@ -227,13 +230,32 @@ input {
   font-size: 1rem;
 }
 
+button {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+}
+
+.button-go {
+  width: 60%;
+  background-color: #F69261;
+}
+
+.button-back {
+  width: 30%;
+  background-color: #304D5D;
+}
+
 input::placeholder {
   color: #F69261;
 }
 
 input[type=submit], input[type=button] {
   border: none;
-
 }
 
 /*sign-in*/
@@ -274,13 +296,15 @@ input[type=button] {
 
 .product-cart-item {
   display: flex;
+  justify-content: space-between;
   height: 25%;
+  margin: 1rem 0 1rem 0;
 }
 
 .product-cart-content {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
 }
 
 .product-item-img-container {
@@ -291,30 +315,45 @@ input[type=button] {
   width: 100%;
 }
 
-.flex-display {
+.delete-item {
+  color: #F69261;
+  margin-top: 0.2em;
+  margin-left: auto;
+}
+
+.product-cart-title-genre {
   display: flex;
   flex-direction: column;
+}
+
+.product-item-price {
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.flex-display {
+  display: flex;
 }
 
 .inline-element {
   display: inline;
 }
 
-.delete-item {
-  margin-left: auto;
-}
-
-.product-item-price {
-  align-self: baseline;
-}
-
-
-/* product page */
-.product-single {
-  display: flex;
-  flex-direction: column;
+#total-cart-content {
+  background-color: #F4F4F4;
   width: 100%;
-  margin: 1em 0 1em 0;
+  padding: 1rem;
+  text-align: right;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+#total-cart-content p {
+  margin-bottom: 0;
+}
+
+#cart-buttons {
+  justify-content: space-between;
 }
 
 .product-single img {
