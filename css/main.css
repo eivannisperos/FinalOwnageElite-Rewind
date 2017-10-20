@@ -217,6 +217,11 @@ nav - display set to flex to make it easier for alignment
   font-style: italic;
   color: #39505E;
   margin-right: 1.7rem;
+  overflow: scroll;
+}
+
+#selected-category {
+  color: #F69261;
 }
 
 /*footer*/
