@@ -117,7 +117,7 @@ nav - display set to flex to make it easier for alignment
 
 #about-para {
   color: white;
-  width: 85%;
+  width: 88%;
 }
 
 /*featured listing*/
@@ -151,6 +151,10 @@ nav - display set to flex to make it easier for alignment
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+#product-feature-top {
+  margin-top: 4.5rem;
 }
 
 /*footer*/
