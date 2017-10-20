@@ -185,3 +185,19 @@ nav - display set to flex to make it easier for alignment
   justify-content: center;
   align-items: center;
 }
+
+
+/* product page */
+.product-single {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1em 0 1em 0;
+}
+
+
+.product-single img {
+  box-shadow: 5px 5px #F69261;
+  margin-bottom: 1em;
+  width: 100%;
+}
