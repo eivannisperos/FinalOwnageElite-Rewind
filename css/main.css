@@ -50,11 +50,8 @@ nav - display set to flex to make it easier for alignment
   display: flex;
 }
 
-#main-nav a {
-  padding: 1em;
-}
-
 .nav-link {
+  padding: 1em;
   color: #FD9264;
   text-decoration: none;
 }
@@ -77,21 +74,20 @@ nav - display set to flex to make it easier for alignment
 /*main nav hiden*/
 #main-nav-bar-hidden {
   background-color: white;
-  border-radius: 1em;
-  flex-direction: column;
+  border-radius: 0 0 10px 0;
+  display: none;
   position: absolute;
-  align-self: flex-end;
+  flex-direction: column;
   top: 1rem;
   margin-top: 1em;
-  padding-right: 1em;
-  padding-bottom: 1em;
+  padding: 1rem;
   width: 30%;
 }
 
-#main-nav-bar-hidden a {
+.hidden-link {
   color: #F69261;
   text-decoration: none;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 /*home page*/
@@ -120,7 +116,7 @@ nav - display set to flex to make it easier for alignment
 .product-listing {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 100%;
   margin: 1em 0 1em 0;
 }
 
