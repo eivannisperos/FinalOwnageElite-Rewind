@@ -3,6 +3,11 @@
   src: url("fonts/analogue86blackoblique.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: 'figcaption-font';
+  src: url("fonts/Roboto-Italic.ttf") format('truetype');
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -15,7 +20,13 @@ section {
 
 h1, h2, h3, h4 {
   font-family: 'Racing Sans One', cursive;
-  color: #FD9264;
+  color: #39505E;
+  letter-spacing: 1px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 p {
@@ -33,14 +44,23 @@ nav - display set to flex to make it easier for alignment
 */
 
 #main-nav {
+  background-color: white;
   position: absolute;
   width: 100%;
+  display: flex;
 }
 
-#main-nav-link-container {
-  display: flex;
-  padding: 0.9em;
+#main-nav a {
+  padding: 1em;
 }
+
+/*#main-nav-link-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding: 1em;
+  background-color: white;
+}*/
 
 .nav-link {
   color: #FD9264;
@@ -64,6 +84,10 @@ nav - display set to flex to make it easier for alignment
 
 /*home page*/
 
+#about-intro {
+  background-color: #39505E;
+}
+
 #about-intro-content {
   display: flex;
   flex-direction: column;
@@ -74,19 +98,30 @@ nav - display set to flex to make it easier for alignment
 /*featured listing*/
 
 .product-listing {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 1em 0 1em 0;
 }
 
 .product-listing img {
   width: 100%;
 }
 
+.genre-category {
+  font-family: 'figcaption-font', sans-serif;
+  align-self: flex-end;
+  font-size: 0.8rem;
+}
+
 #featured-listing {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #featured-listing-content {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
