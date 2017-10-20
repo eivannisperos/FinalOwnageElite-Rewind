@@ -1,8 +1,10 @@
 window.onload = function() {
   var mobileLinks = document.getElementById('main-nav-bar-hidden');
   var mobileIcon = document.getElementById('nav-toggle');
-  var mobileIconPadding = document.getElementById('nav-toggle-area')
-  var mobileLinksA = document.getElementsByClassName('hidden-link')
+  var mobileIconPadding = document.getElementById('nav-toggle-area');
+  var mobileLinksA = document.getElementsByClassName('hidden-link');
+
+  var deleteItemLogo = document.getElementsByClassName('delete-item');
 
   function mobileMenuCloseOpen(e) {
     if (e.target != mobileLinks ) {

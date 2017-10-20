@@ -33,7 +33,7 @@ p {
   font-size: 0.9rem;
 }
 
-form, button {
+form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,13 +219,32 @@ input {
   font-size: 1rem;
 }
 
+button {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+}
+
+.button-go {
+  width: 60%;
+  background-color: #F69261;
+}
+
+.button-back {
+  width: 30%;
+  background-color: #304D5D;
+}
+
 input::placeholder {
   color: #F69261;
 }
 
 input[type=submit], input[type=button] {
   border: none;
-
 }
 
 /*sign-in*/
@@ -310,8 +329,22 @@ input[type=button] {
 }
 
 #total-cart-content {
+  background-color: #F4F4F4;
+  width: 100%;
+  padding: 1rem;
   text-align: right;
   margin-left: auto;
+  border-radius: 5px;
+}
+
+#total-cart-content p {
+  margin-bottom: 0;
+}
+
+#cart-buttons {
+  justify-content: space-between;
+}
+
 .product-single img {
   box-shadow: 5px 5px #F69261;
   margin-bottom: 1em;
