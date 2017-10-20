@@ -41,17 +41,6 @@ form {
   width: 100%;
 }
 
-button {
-  background-color: #304D5D;
-  width: 30%;
-  color: white;
-  font-family: 'figcaption-font', sans-serif;
-  text-decoration: none;
-  font-size: 0.8rem;
-  padding: .5rem .2rem .5rem .2rem;
-  margin: 1rem;
-}
-
 .form-container {
   display: flex;
   flex-direction: column;
@@ -263,6 +252,16 @@ input[type=submit] {
   background-color: #F69261;
   color: white;
   width: 60%;
+}
+
+#sign-in {
+  flex-direction: column;
+}
+
+#sign-in-content {
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
 /*register*/

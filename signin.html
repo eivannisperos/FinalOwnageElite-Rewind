@@ -22,20 +22,21 @@
       </div>
     </nav>
 
-    <section id="featured-listing" class="page-banner">
-      <div id="about-intro-content">
+    <section class="form-section-height" id="sign-in">
+      <div id="sign-in-content">
         <h2 class="header-space">Sign In</h2>
-      </div>
-    </section>
+        <form id="sign-in-form" action="signin.html" method="GET">
+          <input type="text" id="username" name="user-name" placeholder="username" required/>
+          <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
 
-    <section id="sign-in-content">
-      <form id="sign-in-form" action="signin.html" method="GET">
-        <input type="text" id="username" name="user-name" placeholder="username" required/>
-        <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
-        <a href="#" id="password-reset-btn">Forgot Password?</a>
-        <input type="submit" value="SIGN IN"/>
-        <button onclick="window.location='register.html'">SIGN UP</button>
-      </form>
+          <div id="button-div">
+            <input type="button" value="Register" onclick="location.href='register.html'"/>
+            <input type="submit" value="Sign In"/>
+          </div>
+
+          <a href="#" class="sub-button" id="password-reset-btn">Forgot Password?</a>
+        </form>
+      </div>
     </section>
   </body>
 </html>
