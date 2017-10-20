@@ -210,12 +210,25 @@ p {
     background-color: #39505E;
   }
 
+.sorting-text {
+  display: inline;
+  font-size: .8rem;
+  font-style: italic;
+  color: #39505E;
+  margin-right: 1.7rem;
+  overflow: scroll;
+}
   #top-shortcut-link {
     color: #F69261;
     margin: auto;
     text-decoration: none;
   }
 
+#selected-category {
+  color: #F69261;
+}
+
+/*footer*/
   /*form control*/
 
   input {
