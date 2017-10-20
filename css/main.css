@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'rewind-font';
+  src: url("fonts/analogue86blackoblique.ttf") format('truetype');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Racing Sans One', cursive;
+  color: #FD9264;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.hero-banner {
+  height: 75vh;
+}
+
+/*navigation
+nav - display set to flex to make it easier for alignment
+.mobile-icon - container for the3 images, acts as containers to links
+- set width of the icons
+*/
+
+#main-nav {
+  position: absolute;
+  width: 100%;
+}
+
+#main-nav-link-container {
+  display: flex;
+  padding: 0.9em;
+}
+
+.nav-link {
+  color: #FD9264;
+  text-decoration: none;
+}
+
+.mobile-icon-link {
+  width: 0.8em;
+}
+
+.mobile-icon {
+  width: 100%;
+}
+
+#home-link-icon {
+  color: #304D5D;
+  font-family: 'rewind-font';
+  margin: auto;
+  margin-top: 0.3em;
+}
+
+/*home page*/
+
+#about-intro-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+/*featured listing*/
+
+.product-listing {
+  width: 50%;
+}
+
+.product-listing img {
+  width: 100%;
+}
+
+#featured-listing {
+  display: flex;
+  flex-direction: column;
+}
+
+#featured-listing-content {
+  display: flex;
+  flex-wrap: wrap;
+}
