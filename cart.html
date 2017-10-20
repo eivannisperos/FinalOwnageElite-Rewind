@@ -21,20 +21,28 @@
       </div>
     </nav>
 
-    <section class="form-section-height" id="sign-in">
-      <div class="form-container" id="sign-in-content">
-        <h1 class="header-no-top-marigin">Sign In</h1>
-        <form id="sign-in-form" action="signin.html" method="GET">
-          <input type="text" id="username" name="user-name" placeholder="username" required/>
-          <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
+    <section id="cart">
+      <h1 class="header-space">Cart</h1>
+      <div class="product-cart-item">
+        <div class="product-item-img-container">
+          <img class="product-item-img" src="img/product1.jpg"/>
+        </div>
+        <div class="product-cart-content">
+          <div class="title-delete-div flex-display">
+            <div class="inline-element">
+              <h3>Aerobicide</h3>
+              <figcaption class="genre-category">
+                Thriller
+              </figcaption>
+            </div>
 
-          <div id="button-div">
-            <input type="button" value="Register" onclick="location.href='register.html';" />
-            <input type="submit" value="Sign In" />
+            <span class="delete-item">X</span>
           </div>
 
-          <a href="#" class="sub-button" id="password-reset-btn">Forgot Password?</a>
-        </form>
+          <p class="product-item-price">
+            $2.99
+          </p>
+        </div>
       </div>
     </section>
   </body>

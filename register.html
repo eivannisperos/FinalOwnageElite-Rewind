@@ -21,19 +21,20 @@
       </div>
     </nav>
 
-    <section class="form-section-height" id="sign-in">
-      <div class="form-container" id="sign-in-content">
-        <h1 class="header-no-top-marigin">Sign In</h1>
-        <form id="sign-in-form" action="signin.html" method="GET">
+    <section class="form-section-height" id="register">
+      <div class="form-container" id="register-content">
+        <h1 class="header-no-top-marigin">Register</h1>
+        <form id="sign-in-form" action="register.html" method="GET">
           <input type="text" id="username" name="user-name" placeholder="username" required/>
-          <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
+          <input type="email" id="email" name="user-email" placeholder="email" required/>
+          <input type="password" id="password" name="pass-word" placeholder="enter password" required/>
+          <input type="password" id="confirm-password" name="pass-word" placeholder="confirm password" required/>
 
           <div id="button-div">
-            <input type="button" value="Register" onclick="location.href='register.html';" />
-            <input type="submit" value="Sign In" />
+            <input type="submit" id="register-btn-submit" value="Register" />
           </div>
 
-          <a href="#" class="sub-button" id="password-reset-btn">Forgot Password?</a>
+          <a href="signin.html" class="sub-button" id="password-reset-btn">Already have an account? Sign in.</a>
         </form>
       </div>
     </section>

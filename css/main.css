@@ -33,6 +33,22 @@ p {
   font-size: 0.9rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+}
+
 .hero-banner {
   height: 75vh;
 }
@@ -48,6 +64,19 @@ p {
 .header-space {
   margin-top: 3rem;
 }
+
+.form-section-height {
+  height: 80vh;
+}
+
+.sub-button {
+  color: #7A7A7A;
+  font-family: 'figcaption-font', sans-serif;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+
 
 /*navigation
 nav - display set to flex to make it easier for alignment
@@ -206,51 +235,60 @@ input[type=button] {
   width: 30%;
 }
 
-
-
 #button-div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-button {
+
+/*register*/
+
+#register {
+  height: 100vh;
+}
+
+#register-btn-submit {
+  width: 100%;
+}
+
+/*cart*/
+#cart {
+  flex-direction: column;
+}
+
+.product-cart-item {
+  display: flex;
+  height: 25%;
+}
+
+.product-cart-content {
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  height: 2rem;
-  margin: 0.5rem;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(100, 128, 140);
-  box-shadow: 0 0 5px 1px black;
-  text-align: center;
 }
 
-/* sign in */
-#sign-in {
-  height: 80vh;
+.product-item-img-container {
+  width: 50%;
 }
 
-#sign-in-content {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
+.product-item-img-container img {
   width: 100%;
 }
 
-#sign-in-form {
+.flex-display {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
-#password-reset-btn {
-  color: #7A7A7A;
-  font-family: 'figcaption-font', sans-serif;
-  text-decoration: none;
-  font-size: 0.8rem;
-  margin: 1rem;
+.inline-element {
+  display: inline;
+}
+
+.delete-item {
+  margin-left: auto;
+}
+
+.product-item-price {
+  align-self: baseline;
 }
