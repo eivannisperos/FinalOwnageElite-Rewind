@@ -33,7 +33,7 @@ p {
   font-size: 0.9rem;
 }
 
-form {
+form, button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,7 +234,7 @@ input[type=submit] {
 
 /*register*/
 input[type=button] {
-    background-color: #304D5D;
+  background-color: #304D5D;
   color: white;
   width: 30%;
 }
@@ -306,9 +306,31 @@ input[type=button] {
   margin: 1em 0 1em 0;
 }
 
-
 .product-single img {
   box-shadow: 5px 5px #F69261;
   margin-bottom: 1em;
   width: 100%;
+}
+
+.prod-desc {
+  color: #39505E;
+}
+
+#comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people-reviews {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+.other-user {
+  font-family: 'figcaption-font', sans-serif;
+  font-size: 0.8rem;
+  color: #7A7A7A;
 }
