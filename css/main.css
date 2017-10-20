@@ -181,6 +181,10 @@ nav - display set to flex to make it easier for alignment
   color: #7A7A7A;
 }
 
+.orange-button {
+  background-color: #F69261;
+}
+
 #featured-listing {
   display: flex;
   flex-direction: column;
@@ -191,6 +195,12 @@ nav - display set to flex to make it easier for alignment
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+#categories {
+  display: inline;
+  color: #F69261;
+  margin: auto;
 }
 
 /*footer*/
@@ -439,6 +449,7 @@ select {
 .input-space {
   height: 5rem;
   margin: 0;
+  margin-bottom: .5rem;
 }
 
 .people-reviews {
