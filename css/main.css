@@ -37,6 +37,10 @@ p {
   height: 75vh;
 }
 
+.page-banner {
+  height: 20vh;
+}
+
 /*navigation
 nav - display set to flex to make it easier for alignment
 .mobile-icon - container for the3 images, acts as containers to links
@@ -100,6 +104,7 @@ nav - display set to flex to make it easier for alignment
   display: flex;
   flex-direction: column;
   margin: auto;
+  margin-top: 4rem;
   align-items: center;
 }
 
@@ -155,4 +160,21 @@ nav - display set to flex to make it easier for alignment
   color: #F69261;
   margin: auto;
   text-decoration: none;
+}
+
+
+/* sign in */
+
+#sign-in-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sign-in-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
