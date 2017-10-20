@@ -150,7 +150,7 @@ nav - display set to flex to make it easier for alignment
 
 #about-para {
   color: white;
-  width: 85%;
+  width: 88%;
 }
 
 /*featured listing*/
@@ -184,6 +184,10 @@ nav - display set to flex to make it easier for alignment
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+#product-feature-top {
+  margin-top: 4.5rem;
 }
 
 /*footer*/
@@ -291,4 +295,20 @@ input[type=button] {
 
 .product-item-price {
   align-self: baseline;
+}
+
+
+/* product page */
+.product-single {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 1em 0 1em 0;
+}
+
+
+.product-single img {
+  box-shadow: 5px 5px #F69261;
+  margin-bottom: 1em;
+  width: 100%;
 }
