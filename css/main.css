@@ -117,6 +117,7 @@ nav - display set to flex to make it easier for alignment
 
 #about-para {
   color: white;
+  width: 85%;
 }
 
 /*featured listing*/
@@ -136,7 +137,6 @@ nav - display set to flex to make it easier for alignment
 
 .genre-category {
   font-family: 'figcaption-font', sans-serif;
-  align-self: flex-end;
   font-size: 0.8rem;
   color: #7A7A7A;
 }
