@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>rewind | signin</title>
+    <title>rewind | payment</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -21,21 +21,45 @@
       </div>
     </nav>
 
-    <section class="form-section-height" id="payment">
-      <div class="form-container" id="sign-in-content">
-        <h1 class="header-no-top-marigin">Sign In</h1>
+    <section id="payment">
+      <div class="form-container" id="payment-content">
+        <h1 class="header-space">Payment</h1>
         <form id="sign-in-form" action="signin.html" method="GET">
-          <input type="text" id="username" name="user-name" placeholder="username" required/>
-          <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
+          <input type="text" id="first-name" name="firstname" placeholder="first name" required/>
+          <input type="text" id="last-name" name="lastname" placeholder="last name" required/>
 
-          <div id="button-div">
-            <input type="button" value="Register" onclick="location.href='register.html';" />
-            <input type="submit" value="Sign In" />
+          <input type="text" id="address" name="useraddress" placeholder="address" required/>
+
+          <div id="vital-address-info">
+            <select name="country" placeholder="Select Your Country">
+              <option value="" disabled selected>Country</option>
+              <option value="CAN">
+                Canada
+              </option>
+
+              <option value="USA">
+                United States
+              </option>
+            </select>
+
+            <input type="text" id="postal-code" name="postal-code" placeholder="Postal Code" required/>
           </div>
 
-          <a href="#" class="sub-button" id="password-reset-btn">Forgot Password?</a>
+          <div id="credit-card-details">
+            <h4 id="credit-card-header">Credit Card</h4>
+            <div id="credit-card-numbers">
+              <input type="number" id="credit-card" name="cc" placeholder="XXXX-XXXX-XXXX-XXXX" required/>
+              <input type="number" id="cvn" name="cvn" placeholder="CVN" required/>
+            </div>
+          </div>
+
+          <div id="button-div">
+            <input type="button" value="Go Back" onclick="location.href='cart.html';" />
+            <input type="submit" value="Purchase" onclick="location.href='thankyou.html'" />
+          </div>
         </form>
       </div>
     </section>
+
   </body>
 </html>

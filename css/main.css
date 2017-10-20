@@ -261,12 +261,30 @@ input[type=button] {
   width: 30%;
 }
 
+#vital-address-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 #button-div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
+select {
+  width: 45%;
+  margin: 1rem 0 1rem 0;
+  height: 2.4rem;
+  color: #F69261;
+  text-align: center;
+  border: solid 2.5px;
+  border-radius: 5px;
+  border-color: rgb(100, 128, 140);
+  font-size: 1rem;
+  margin-right: auto;
+}
 
 /*register*/
 
@@ -343,6 +361,41 @@ input[type=button] {
 
 #cart-buttons {
   justify-content: space-between;
+}
+
+/*payment*/
+#postal-code {
+  width: 45%;
+}
+
+#credit-card-numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#credit-card {
+  width: 70%;
+}
+
+#cvn {
+  width: 20%;
+}
+
+#credit-card-header {
+  margin-bottom: 0;
+}
+
+/*thank you*/
+#thankyou-content {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+#thankyou-home-btn {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
 }
 
 .product-single img {
