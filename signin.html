@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rewind | home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+
+  <body>
+    <nav id="main-nav">
+      <a class="nav-link mobile-icon-link" id="nav-toggle" href="#"><img class="mobile-icon" src="img/menu-toggle.png" alt="menu toggle icon, press me to make the rest of the menu appear"/></a>
+      <a class="nav-link" id="home-link-icon" href="index.html">REWIND</a>
+      <a class="nav-link mobile-icon-link" id="search-toggle" href="#"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
+      <div id="main-nav-bar-hidden">
+        <a href="#">Users</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <section id="featured-listing" class="hero-banner">
+      <div id="about-intro-content">
+        <h1 id="about-header">Sign In</h1>
+      </div>
+    </section>
+
+    <section id="sign-in-content">
+      <form id="sign-in-form" action="signin.html" method="GET">
+        <input type="text" id="username" name="user-name" placeholder="username" required/>
+        <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
+        <a href="#" id="password-reset-btn">Forgot Password?</a>
+        <input type="submit" value="SIGN IN"/>
+        <button onclick="window.location='register.html'">SIGN UP</button>
+      </form>
+    </section>
+  </body>
+</html>
