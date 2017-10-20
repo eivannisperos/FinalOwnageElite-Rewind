@@ -203,6 +203,22 @@ nav - display set to flex to make it easier for alignment
   margin: auto;
 }
 
+.sorting {
+  display: inline;
+}
+
+.sorting-content{
+  display: inline;
+}
+
+.sorting-text {
+  display: inline;
+  font-size: .8rem;
+  font-style: italic;
+  color: #39505E;
+  margin-right: 1.7rem;
+}
+
 /*footer*/
 
 #top-shortcut {
