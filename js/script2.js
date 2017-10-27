@@ -1,18 +1,6 @@
 window.onload = function() {
   const MOBILE = window.matchMedia("(max-width: 720px)");
 
-  var toggleMenuBtn = document.getElementById('toggle-menu-btn');
-  var closeMenuBtn = document.getElementById('close-menu-btn');
-
-  var menuBar = document.getElementById('styleguide-menu');
-  var content = document.getElementById('styleguide-content');
-
-  var mobileMenuBarWidth = '70%';
-  var mobileContentLeftM = '70%';
-
-  var desktopMenuBarWidth = '30%';
-  var desktopContentLeftM = '30%';
-
   //navigational javascript
   var mobileLinks = document.getElementById('main-nav-bar-hidden');
   var mobileIcon = document.getElementById('nav-toggle');
@@ -36,24 +24,21 @@ window.onload = function() {
     mobileLinks.style.display = 'none';
   }
 
-  function openNav() {
-    menuBar.style.width = mobileMenuBarWidth;
-    content.style.marginLeft = mobileContentLeftM;
-  }
-
-  function closeNav() {
-    menuBar.style.width = "0";
-    content.style.marginLeft = "0";
-  }
-
   function checkMobileScreen() {
     if (MOBILE.matches) {
+      /*close nav
+        - placed here so that the nav closes by default when resized
+      */
       hideMobileLinksAction();
       mobileIcon.addEventListener("click", showMobileLinks);
       closeMobileNav.addEventListener("click", hideMobileLinks);
 
     } else {
+      /*
+        - when screen reverts back to desktop, reverts to default sizes
+      */
 
+      mobileLinks.style.display = 'flex';
       mobileIcon.removeEventListener("click", showMobileLinks);
     }
   }
