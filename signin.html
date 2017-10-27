@@ -4,32 +4,36 @@
     <title>rewind | signin</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main2.css" />
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
   </head>
 
   <body>
     <nav id="main-nav">
-      <a class="nav-link mobile-icon-link" href="#"><img id="nav-toggle" class="mobile-icon" src="img/menu-toggle.png" alt="menu toggle icon, press me to make the rest of the menu appear"/></a>
-      <a class="nav-link" id="home-link-icon" href="index.html">REWIND</a>
-      <a class="nav-link mobile-icon-link" id="search-toggle" href="#"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
+      <a class="nav-link mobile-icon-link"><img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /></a>
       <div id="main-nav-bar-hidden">
-        <a class="hidden-link" href="signin.html">Sign In</a>
-        <a class="hidden-link" href="products.html">Products</a>
-        <a class="hidden-link" href="cart.html">Cart</a>
-        <a class="hidden-link" href="contact.html">Contact</a>
+        <div class="flex-display" id="home-close-btn-group">
+          <a class="nav-link hidden-link" href="signin.html">Sign In</a>
+          <a class="nav-link hidden-link" id="close-nav">X</a>
+        </div>
+        <a class="nav-link hidden-link" href="products.html">Products</a>
+        <a class="nav-link hidden-link" href="cart.html">Cart</a>
+        <a class="nav-link hidden-link" href="contact.html">Contact</a>
       </div>
+
+      <a class="nav-link" id="home-link-icon" href="#">REWIND</a>
+      <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
     </nav>
 
     <section class="form-section-height" id="sign-in">
-      <div id="sign-in-content">
+      <div class="flex-display" id="sign-in-content">
         <h2 class="header-space">Sign In</h2>
         <form id="sign-in-form" action="signin.html" method="GET">
           <input type="text" id="username" name="user-name" placeholder="username" required/>
           <input type="password" id="password" name="pass-word" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required/>
 
-          <div id="button-div">
+          <div class="button-div">
             <button class="button-back" type="button" onclick="location.href='register.html'">Register</button>
             <button class="button-go" type="submit">Sign In</button>
           </div>

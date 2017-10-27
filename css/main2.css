@@ -72,6 +72,10 @@ section, .flex-display {
   flex-direction: column;
 }
 
+.flex-display {
+  align-items: center;
+}
+
 section {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -85,6 +89,10 @@ section {
 
 .hero-banner {
   height: 75vh;
+}
+
+.form-section-height {
+  height: 100vh;
 }
 
 /*footer*/
@@ -299,6 +307,7 @@ index.html
     font-family: 'figcaption-font', sans-serif;
     text-decoration: none;
     font-size: 0.8rem;
+    margin: 1rem 0 1rem 0;
   }
 
   /*
@@ -317,7 +326,7 @@ index.html
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    position: relative;
+    position: absolute;
   }
 
   #main-nav-bar-hidden {
@@ -364,6 +373,9 @@ index.html
    - text styles
   */
   form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 
@@ -409,6 +421,14 @@ index.html
     flex-direction: row;
     align-items: center;
   }
+
+  /*******************************************************
+  sign in @ 0
+  ********************************************************/
+  #sign-in-content {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 720px) {
@@ -453,11 +473,6 @@ index.html
     display: none;
   }
 
-  /*button-styles*/
-  .button-div {
-    width: 50%;
-  }
-
   /*text-boxes*/
   form {
     width: 50%;
@@ -472,8 +487,9 @@ index.html
   }
 
   /*********************************************************
-  index.html
+  sign in @ 768px
   **********************************************************/
+
 }
 
 @media (min-width: 1090px) {
