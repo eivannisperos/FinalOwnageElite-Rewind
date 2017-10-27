@@ -59,9 +59,9 @@ code p {
   margin: 0;
 }
 
-/***
+/**********************************************************
   - display structuress
-***/
+************************************************************/
 
 .inline-block-display {
   display: inline-block;
@@ -81,6 +81,21 @@ section {
   background-color: #F2F2F2;
   border-radius: 5px;
   padding: 1rem;
+}
+
+.hero-banner {
+  height: 75vh;
+}
+
+/*footer*/
+#top-shortcut {
+  background-color: #39505E;
+}
+
+#top-shortcut-link {
+  color: #F69261;
+  margin: auto;
+  text-decoration: none;
 }
 
 /*
@@ -175,6 +190,42 @@ input::placeholder {
 
 .product-list-title {
   margin: 0;
+}
+
+/****************************************************
+index.html @ 0px
+******************************************************/
+#featured-listing {
+  align-items: center;
+}
+#featured-listing-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/******************************************************************
+index.html
+********************************************************************/
+
+#about-intro {
+  background-color: #39505E;
+}
+
+#about-intro-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+
+#about-header {
+  color: #F69261;
+}
+
+#about-para {
+  color: white;
 }
 
 @media (min-width: 0px) {
@@ -362,6 +413,11 @@ input::placeholder {
 
 @media (min-width: 720px) {
 
+  /*structure*/
+  .content-paragraph {
+    width: 50%;
+  }
+
   /*nav*/
   .mobile-icon-link {
     display: none;
@@ -408,11 +464,32 @@ input::placeholder {
   }
 
   /*********************************************************
-  combined elements
+  combined elements @ 768px
   **********************************************************/
 
   .product-listing {
-    margin: auto;
-    width: 50%;
+    width: 45%;
   }
+
+  /*********************************************************
+  index.html
+  **********************************************************/
+}
+
+@media (min-width: 1090px) {
+  /*********************************************************
+  combined elements @ 1090px
+  **********************************************************/
+
+  .product-listing {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1575px) {
+
 }

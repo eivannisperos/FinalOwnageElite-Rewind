@@ -20,7 +20,7 @@
         </div>
         <a class="nav-link hidden-link" href="products.html">Products</a>
         <a class="nav-link hidden-link" href="cart.html">Cart</a>
-        <a class="nav-link hidden-link" href="contact.html">Contract</a>
+        <a class="nav-link hidden-link" href="contact.html">Contact</a>
       </div>
 
       <a class="nav-link" id="home-link-icon" href="#">REWIND</a>
@@ -30,7 +30,7 @@
     <section id="about-intro" class="hero-banner">
       <div id="about-intro-content">
         <h1 id="about-header">What is Rewind?</h1>
-        <p id="about-para">
+        <p class="content-paragraph" id="about-para">
           Rewind is a the spot for VHS collectors to find their favourite old videos. Like
           records, VHS have their own retro appeal to the community and there are people who
           live to collect the rarest VHS videos to experience them in their original quality.
@@ -39,38 +39,42 @@
       </div>
     </section>
 
-    <section id="featured-listing">
+    <section class="flex-display" id="featured-listing">
       <h2>Featured</h2>
       <div id="featured-listing-content">
         <div class="product-listing">
-          <a href="productpage.html">
-            <img src="img/product1.jpg" alt="A man holding a knife, with girls working out on the knife"/>
+          <a href="#">
+            <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
           </a>
-          <h3>Aerobicide</h3>
-          <figcaption class="genre-category">
-            Thriller
-          </figcaption>
-          <figcaption class="genre-category">
-            $18.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">The Intruder</h3>
+              <figcaption class="product-genre-category">
+                Action
+              </figcaption>
+            </div>
+            <a class="product-price">$19.99</a>
+          </div>
         </div>
+
         <div class="product-listing">
-          <a href="productpage2.html">
-            <img src="img/product2.jpg" alt="Portrait of ninja and collage of people fighting"/>
+          <a href="#">
+            <img class="product-list-img" src="img/product2.jpg" alt="Man firing machine gun off into the distance"/>
           </a>
-          <h3>Death Code: Ninja</h3>
-          <figcaption class="genre-category">
-            Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $15.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">Dead Code Ninja</h3>
+              <figcaption class="product-genre-category">
+                Action, Fantasy
+              </figcaption>
+            </div>
+            <a class="product-price">$19.99</a>
+          </div>
         </div>
-      </div>
     </section>
 
     <section id="top-shortcut" class="footer">
-      <a id="top-shortcut-link" href="#">▲</a>
+      <a id="top-shortcut-link" class="nav-link" href="#">▲</a>
     </section>
   </body>
 </html>
