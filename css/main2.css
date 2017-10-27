@@ -491,6 +491,7 @@ Product List Page
   }
 
   #main-nav {
+    background-color: white;
     padding: 1rem;
     flex-flow: row-reverse;
     align-items: center;
@@ -498,6 +499,7 @@ Product List Page
   }
 
   #main-nav-bar-hidden {
+    background: white;
     position: relative;
     display: flex;
     flex-direction: row;
