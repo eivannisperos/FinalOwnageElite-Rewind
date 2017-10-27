@@ -95,6 +95,11 @@ section {
   height: 100vh;
 }
 
+.content {
+  width: 100%;
+  margin: auto;
+}
+
 /*footer*/
 #top-shortcut {
   background-color: #39505E;
@@ -144,6 +149,7 @@ button, .button-go, .button-back {
   font-size: 1rem;
   border: none;
   color: white;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 /*text areas / text fields*/
@@ -421,14 +427,6 @@ index.html
     flex-direction: row;
     align-items: center;
   }
-
-  /*******************************************************
-  sign in @ 0
-  ********************************************************/
-  #sign-in-content {
-    width: 100%;
-    margin: auto;
-  }
 }
 
 @media (min-width: 720px) {
@@ -475,7 +473,7 @@ index.html
 
   /*text-boxes*/
   form {
-    width: 50%;
+    width: 45%;
   }
 
   /*********************************************************
@@ -487,9 +485,11 @@ index.html
   }
 
   /*********************************************************
-  sign in @ 768px
+  resgister @ 768px
   **********************************************************/
-
+  #register-btn-submit {
+    width: 45%;
+  }
 }
 
 @media (min-width: 1090px) {
