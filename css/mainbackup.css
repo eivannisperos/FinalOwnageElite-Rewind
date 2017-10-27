@@ -8,19 +8,9 @@
   src: url("fonts/Roboto-Italic.ttf") format('truetype');
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  overflow-x: hidden;
-  font-size: 0.9rem;
 }
 
 section {
@@ -32,15 +22,11 @@ h1, h2, h3, h4 {
   font-family: 'Racing Sans One', cursive;
   color: #39505E;
   letter-spacing: 1px;
+}
+
+h3 {
   margin: 0;
-}
-
-h2, h3 {
-  margin-bottom: 1rem;
-}
-
-h4 {
-  margin-top: 0.5rem;
+  padding: 0;
 }
 
 p {
@@ -52,10 +38,6 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-img {
   width: 100%;
 }
 
@@ -259,21 +241,20 @@ nav - display set to flex to make it easier for alignment
   color: #39505E;
   margin-right: 1.7rem;
 }
+  .sorting-text {
+    display: inline;
+    font-size: .8rem;
+    font-style: italic;
+    color: #39505E;
+    margin-right: 1.7rem;
+    overflow: scroll;
+  }
 
-.sorting-text {
-  display: inline;
-  font-size: .8rem;
-  font-style: italic;
-  color: #39505E;
-  margin-right: 1.7rem;
-  overflow: scroll;
-}
-
-#top-shortcut-link  {
-  color: #F69261;
-  margin: auto;
-  text-decoration: none;
-}
+  #top-shortcut-link  {
+    color: #F69261;
+    margin: auto;
+    text-decoration: none;
+  }
 
 /*footer*/
 /*form control*/
