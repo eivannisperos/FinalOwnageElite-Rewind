@@ -4,7 +4,7 @@
     <title>rewind | payment</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main2.css" />
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
   </head>
@@ -28,10 +28,10 @@
       <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
     </nav>
 
-    <section id="payment">
-      <div class="form-container" id="payment-content">
-        <h1 class="header-space">Payment</h1>
-        <form id="sign-in-form" action="signin.html" method="GET">
+    <section class="form-section-height" id="payment">
+      <div class="flex-display content" id="payment-content">
+        <h2>Payment</h2>
+        <form id="payment-form" action="signin.html" method="GET">
           <input type="text" id="first-name" name="firstname" placeholder="first name" required/>
           <input type="text" id="last-name" name="lastname" placeholder="last name" required/>
 
@@ -60,9 +60,9 @@
             </div>
           </div>
 
-          <div id="button-div">
-            <input type="button" value="Go Back" onclick="location.href='cart.html';" />
-            <input type="submit" value="Purchase" onclick="location.href='thankyou.html'" />
+          <div class="button-div">
+            <button type="button" value="Go Back" onclick="location.href='cart.html';">Go Back</button>
+            <button type="submit" value="Purchase" onclick="location.href='thankyou.html'">Purchase</button>
           </div>
         </form>
       </div>
