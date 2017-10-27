@@ -376,6 +376,11 @@ index.html
     background-color: #304D5D;
   }
 
+  .button-home {
+    width: 12rem;
+    background-color: #F69261;
+  }
+
   /*
    - text styles
   */
