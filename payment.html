@@ -37,8 +37,8 @@
 
           <input type="text" id="address" name="useraddress" placeholder="address" required/>
 
-          <div id="vital-address-info">
-            <select name="country" placeholder="Select Your Country">
+          <div class="button-div" id="vital-address-info">
+            <select class="col35-percent" name="country" placeholder="Select Your Country">
               <option value="" disabled selected>Country</option>
               <option value="CAN">
                 Canada
@@ -49,20 +49,20 @@
               </option>
             </select>
 
-            <input type="text" id="postal-code" name="postal-code" placeholder="Postal Code" required/>
+            <input class="col60-percent" type="text" id="postal-code" name="postal-code" placeholder="Postal Code" required/>
           </div>
 
-          <div id="credit-card-details">
+          <div class="flex-display content" id="credit-card-details">
             <h4 id="credit-card-header">Credit Card</h4>
-            <div id="credit-card-numbers">
-              <input type="number" id="credit-card" name="cc" placeholder="XXXX-XXXX-XXXX-XXXX" required/>
-              <input type="number" id="cvn" name="cvn" placeholder="CVN" required/>
+            <div class="button-div" id="credit-card-numbers">
+              <input class="col60-percent" type="number" id="credit-card" name="cc" placeholder="XXXX-XXXX-XXXX-XXXX" required/>
+              <input class="col35-percent" type="number" id="cvn" name="cvn" placeholder="CVN" required/>
             </div>
           </div>
 
           <div class="button-div">
-            <button type="button" value="Go Back" onclick="location.href='cart.html';">Go Back</button>
-            <button type="submit" value="Purchase" onclick="location.href='thankyou.html'">Purchase</button>
+            <button class="button-back" type="button" value="Go Back" onclick="location.href='cart.html';">Go Back</button>
+            <button class="button-go" type="submit" value="Purchase" onclick="location.href='thankyou.html'">Purchase</button>
           </div>
         </form>
       </div>
