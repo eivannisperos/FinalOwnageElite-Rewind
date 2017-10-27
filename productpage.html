@@ -4,7 +4,7 @@
     <title>rewind | product page 1</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main2.css" />
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto" rel="stylesheet">
     <script type="text/javascript" src="js/script.js"></script>
   </head>
@@ -28,53 +28,58 @@
       <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
     </nav>
 
-    <section id="featured-listing" class="page-banner">
-      <div id="about-intro-content">
-        <h2 class="header-space" id="product-feature-top">Aerobicide</h2>
-      </div>
-    </section>
-
-    <section id="featured-listing">
-      <div id="featured-listing-content">
-        <div class="product-single">
-          <img src="img/product1.jpg" alt="A man holding a knife, with girls working out on the knife"/>
-          <figcaption class="genre-category">
-            Thriller
-          </figcaption>
-          <figcaption class="genre-category">
-            $18.99
-          </figcaption>
+    <section class="flex-display" id="featured-listing">
+      <h2>Aerobicide</h2>
+      <div class="flex-display">
+        <div class="product-listing">
+          <a href="productpage.html">
+            <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
+          </a>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">Aerobicide</h3>
+              <figcaption class="product-genre-category">
+                Action
+              </figcaption>
+            </div>
+            <a class="product-price">$19.99</a>
+          </div>
         </div>
-      </div>
-      <p class="prod-desc">
+
+      <p class="col60-percent-text">
         Two years ago, a young woman named Valerie was burned after entering a
         tanning salon. Now, her twin sister, Rhonda, runs a local gym where, all
         of a sudden, people are being murdered.
       </p>
-      <button class="orange-button" onclick="window.location='cart.html'" type="button">
+      <button class="button-go" onclick="window.location='cart.html'" type="button">
         ADD TO CART
       </button>
     </section>
 
-    <section id="comments">
-      <input class="input-space" type="text" id="comment" name="comment" placeholder="Your Review" required/>
-      <button class="orange-button" type="button">
+    <section class="flex-display" id="comments">
+      <textarea class="col60-percent" id="contact-textarea" placeholder="Leave a review!"></textarea>
+      <button class="button-go" type="button">
         Submit
       </button>
+    </section>
 
-      <div class="people-reviews">
-        <p class="prod-desc-com">
-          Great Movie, I would definitely reccomend this to any fan of VHS movies.
-          This is a must have.
-          <figcaption class="other-user">
+    <section class="flex-display" id="comments">
+      <div class="col60-percent-text">
+        <p>
+          Great Movie, I would definitely reccomend this to any fan of VHS movies. This is a must have for
+          any lover of the genre and even for people who don't!
+          <figcaption>
             -Anonoymous857
           </figcaption>
         </p>
       </div>
-      <div class="people-reviews">
-        <p class="prod-desc-com">
-          One of my favourites!
-          <figcaption class="other-user">
+
+      <div class="col60-percent-text">
+        <p>
+          One of my favourites! I could not believe the ending to this one! The twists, and the turns,
+          every part of this movie is to love. I reccomend this movie to anyone that is reading this comment
+          right now. I promise you that you will not be disappointed by this movie!
+          <figcaption>
             -Brian991
           </figcaption>
         </p>
