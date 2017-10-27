@@ -11,15 +11,21 @@
 
   <body>
     <nav id="main-nav">
-      <a class="nav-link mobile-icon-link" href="#"><img id="nav-toggle" class="mobile-icon" src="img/menu-toggle.png" alt="menu toggle icon, press me to make the rest of the menu appear"/></a>
-      <a class="nav-link" id="home-link-icon" href="index.html">REWIND</a>
-      <a class="nav-link mobile-icon-link" id="search-toggle" href="#"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
+      <a class="nav-link mobile-icon-link"><img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /></a>
       <div id="main-nav-bar-hidden">
-        <a class="hidden-link" href="signin.html">Sign In</a>
-        <a class="hidden-link" href="products.html">Products</a>
-        <a class="hidden-link" href="cart.html">Cart</a>
-        <a class="hidden-link" href="contact.html">Contact</a>
+        <a class="nav-link hidden-link" href="style.html">Style Guide</a>
+        <a class="nav-link hidden-link" href="citations.html">Citations</a>
+        <a class="nav-link hidden-link" href="products.html">Products</a>
+        <a class="nav-link hidden-link" href="cart.html">Cart</a>
+        <a class="nav-link hidden-link" href="contact.html">Contact</a>
+        <div class="flex-display" id="home-close-btn-group">
+          <a class="nav-link hidden-link" href="signin.html">Sign In</a>
+          <a class="nav-link hidden-link" id="close-nav">X</a>
+        </div>
       </div>
+
+      <a class="nav-link" id="home-link-icon" href="index.html">REWIND</a>
+      <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
     </nav>
 
     <section id="payment">
