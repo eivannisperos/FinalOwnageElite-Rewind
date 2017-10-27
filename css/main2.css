@@ -127,6 +127,10 @@ section {
   margin: 0;
 }
 
+.col60-percent-text {
+  width: 100%;
+}
+
 /************************************************************
   - consitent styles
 ************************************************************/
@@ -400,6 +404,11 @@ Product List Page
     background-color: #304D5D;
   }
 
+  .button-home {
+    width: 12rem;
+    background-color: #F69261;
+  }
+
   /*
    - text styles
   */
@@ -460,6 +469,15 @@ Product List Page
   /*structure*/
   .content-paragraph {
     width: 50%;
+  }
+
+  .col60-percent-text {
+    width: 60%;
+  }
+
+  .button-go {
+    width: 35%;
+    background-color: #F69261;
   }
 
   /*nav*/
