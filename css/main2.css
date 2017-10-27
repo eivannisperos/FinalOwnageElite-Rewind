@@ -123,6 +123,10 @@ section {
   width: 60%;
 }
 
+.footer {
+  margin: 0;
+}
+
 /************************************************************
   - consitent styles
 ************************************************************/
@@ -243,6 +247,26 @@ index.html
   color: white;
 }
 
+/******************************************************************
+Product List Page
+********************************************************************/
+#categorization-bar {
+  margin-top: 5rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#category-selection-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.category:hover {
+  cursor: pointer;
+  color: #F69261;
+}
+
 @media (min-width: 0px) {
   /*
   navigation bar
@@ -326,18 +350,18 @@ index.html
   }
 
   #main-nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    position: absolute;
+    position: fixed;
   }
 
   #main-nav-bar-hidden {
-    background-color: white;
+      background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0 0 10px 0;
     display: none;
     position: absolute;
@@ -452,6 +476,7 @@ index.html
     padding: 1rem;
     flex-flow: row-reverse;
     align-items: center;
+    position: absolute;
   }
 
   #main-nav-bar-hidden {
@@ -491,6 +516,13 @@ index.html
   **********************************************************/
   #register-btn-submit {
     width: 45%;
+  }
+
+  /*********************************************************
+  product page list @ 768px
+  **********************************************************/
+  #category-selection-links {
+    width: 25%;
   }
 }
 

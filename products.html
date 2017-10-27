@@ -4,9 +4,9 @@
     <title>rewind | products</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main2.css" />
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One|Roboto" rel="stylesheet">
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script2.js"></script>
   </head>
 
   <body>
@@ -24,150 +24,143 @@
         </div>
       </div>
 
-      <a class="nav-link" id="home-link-icon" href="index.html">REWIND</a>
+      <a class="nav-link" id="home-link-icon" href="#">REWIND</a>
       <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
     </nav>
 
-    <section id="featured-listing" class="page-banner">
-      <div id="about-intro-content">
-        <h2 class="header-space" id="product-feature-top">Products</h2>
-        <div class="sorting">
-          <h4 id="categories">Sort by: </h4>
-          <div class="sorting-content">
-          <p class="sorting-text">
-            Romance
-          </p>
-            <p class="sorting-text" id="selected-category">
-              Thriller
-            </p>
-            <p class="sorting-text">
-              Action
-            </p>
-            <p class="sorting-text">
-              Sci-Fi
-            </p>
-          </div>
+    <section id="categorization-bar">
+      <div class="flex-display" id="category-selection">
+        <h3>Sort by:</h3>
+        <div id="category-selection-links">
+          <a class="category" id="action-btn">Action</a>
+          <a class="category" id="thriller-btn">Thriller</a>
+          <a class="category">Romance</a>
+          <a class="category">Mystery</a>
+          <a class="category">Anime</a>
         </div>
       </div>
     </section>
 
     <section id="featured-listing">
       <div id="featured-listing-content">
-        <div class="product-listing">
+        <div class="product-listing action">
           <a href="productpage.html">
-            <img src="img/product1.jpg" alt="A man holding a knife, with girls working out on the knife"/>
+            <img class="product-list-img" src="img/product1.jpg" alt="Man firing machine gun off into the distance"/>
           </a>
-          <h3>Aerobicide</h3>
-          <figcaption class="genre-category">
-            Thriller
-          </figcaption>
-          <figcaption class="genre-category">
-            $18.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">The Intruder</h3>
+              <figcaption class="product-genre-category">
+                Action
+              </figcaption>
+            </div>
+            <a class="product-price">$19.99</a>
+          </div>
         </div>
 
-        <div class="product-listing">
+        <div class="product-listing action">
           <a href="productpage2.html">
-            <img src="img/product2.jpg" alt="Portrait of ninja and collage of people fighting"/>
+            <img class="product-list-img" src="img/product2.jpg" alt="Portrait of ninja and collage of people fighting"/>
           </a>
-          <h3>Death Code: Ninja</h3>
-          <figcaption class="genre-category">
-            Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $15.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">Death Code: Ninja</h3>
+              <figcaption class="product-genre-category">
+                Action
+              </figcaption>
+            </div>
+            <a class="product-price">$15.99</a>
+          </div>
         </div>
 
-        <div class="product-listing">
-          <a href="productpage.html">
-            <img src="img/product3.jpg" alt="Rugged man holding a shotgun and police cars in background"/>
-          </a>
-          <h3>Eye of the Tiger</h3>
-          <figcaption class="genre-category">
-            Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $19.99
-          </figcaption>
-        </div>
-
-        <div class="product-listing">
+        <div class="product-listing thriller">
           <a href="productpage2.html">
-            <img src="img/product4.jpg" alt="Boy laying on the street by a trash can with people coming out of it"/>
+            <img class="product-list-img" src="img/product3.jpg" alt="Rugged man holding a shotgun and police cars in background"/>
           </a>
-          <h3>Garbage Pail Kids</h3>
-          <figcaption class="genre-category">
-            Fantasy/Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $26.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">Eye of the Tiger</h3>
+              <figcaption class="product-genre-category">
+                Thriller
+              </figcaption>
+            </div>
+            <a class="product-price">$19.99</a>
+          </div>
         </div>
 
-        <div class="product-listing">
-          <a href="productpage.html">
-            <img src="img/product5.jpg" alt="Man firing machine gun off into the distance"/>
-          </a>
-          <h3>The Intruder</h3>
-          <figcaption class="genre-category">
-            Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $29.99
-          </figcaption>
-        </div>
-
-        <div class="product-listing">
+        <div class="product-listing fantasy">
           <a href="productpage2.html">
-            <img src="img/product6.jpg" alt="Deranged woman holding a baby in her hands"/>
+            <img class="product-list-img" src="img/product4.jpg" alt="Boy laying on the street by a trash can with people coming out of it"/>
           </a>
-          <h3>The Mutant Kid</h3>
-          <figcaption class="genre-category">
-            Thriller/Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $10.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">Garbage Pail Kids</h3>
+              <figcaption class="product-genre-category">
+                Fantasy
+              </figcaption>
+            </div>
+            <a class="product-price">$26.99</a>
+          </div>
         </div>
 
-        <div class="product-listing">
-          <a href="productpage.html">
-            <img src="img/product7.jpg" alt="Woman holding a shotgun and 5 men underneath her"/>
-          </a>
-          <h3>Naked Vengeance</h3>
-          <figcaption class="genre-category">
-            Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $15.99
-          </figcaption>
-        </div>
-
-        <div class="product-listing">
+        <div class="product-listing action">
           <a href="productpage2.html">
-            <img src="img/product8.jpg" alt="Man and woman holding each other in front of a monster truck"/>
+            <img class="product-list-img" src="img/product5.jpg" alt="BMan firing machine gun off into the distance"/>
           </a>
-          <h3>Rolling Vengeance</h3>
-          <figcaption class="genre-category">
-            Action
-          </figcaption>
-          <figcaption class="genre-category">
-            $17.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">The Intruder</h3>
+              <figcaption class="product-genre-category">
+                Action
+              </figcaption>
+            </div>
+            <a class="product-price">$29.99</a>
+          </div>
         </div>
 
-        <div class="product-listing">
-          <a href="productpage.html">
-            <img src="img/product9.jpg" alt="Half man half robot holding futuristic gun in front of a battlefield"/>
+        <div class="product-listing thriller action">
+          <a href="productpage2.html">
+            <img class="product-list-img" src="img/product6.jpg" alt="Deranged woman holding a baby in her hands"/>
           </a>
-          <h3>Rome 2033 The Fighter Centurions</h3>
-          <figcaption class="genre-category">
-            Sci-Fi/Fantasy
-          </figcaption>
-          <figcaption class="genre-category">
-            $8.99
-          </figcaption>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">The Mutant Kid</h3>
+              <figcaption class="product-genre-category">
+                Thriller, Action
+              </figcaption>
+            </div>
+            <a class="product-price">$10.99</a>
+          </div>
+        </div>
+
+        <div class="product-listing action">
+          <a href="productpage2.html">
+            <img class="product-list-img" src="img/product7.jpg" alt="Woman holding a shotgun and 5 men underneath her"/>
+          </a>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">Naked Vengeance</h3>
+              <figcaption class="product-genre-category">
+                Action
+              </figcaption>
+            </div>
+            <a class="product-price">$15.99</a>
+          </div>
+        </div>
+
+        <div class="product-listing action">
+          <a href="productpage2.html">
+            <img class="product-list-img" src="img/product8.jpg" alt="Man and woman holding each other in front of a monster truck"/>
+          </a>
+          <div class="flex-display" id="product-title-genre">
+            <div>
+              <h3 class="product-list-title">Rolling VEngeance</h3>
+              <figcaption class="product-genre-category">
+                Action
+              </figcaption>
+            </div>
+            <a class="product-price">$17.99</a>
+          </div>
         </div>
       </div>
     </section>
