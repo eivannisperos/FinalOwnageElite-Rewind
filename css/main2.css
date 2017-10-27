@@ -113,6 +113,10 @@ section {
   min-width: 45%;
 }
 
+#cart-buttons {
+  width: 50%;
+}
+
 /*footer*/
 #top-shortcut {
   background-color: #39505E;
