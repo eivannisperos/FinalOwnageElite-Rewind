@@ -103,6 +103,11 @@ nav - display set to flex to make it easier for alignment
   color: #FD9264;
   text-decoration: none;
 }
+  .nav-link {
+    margin: 1rem;
+    color: #FD9264;
+    text-decoration: none;
+  }
 
 .mobile-icon-link {
   width: 0.8em;
@@ -118,6 +123,11 @@ nav - display set to flex to make it easier for alignment
   margin: auto;
   margin-top: 0.3em;
 }
+  #home-link-icon {
+    color: #304D5D;
+    font-family: 'rewind-font';
+    margin: auto;
+  }
 
 /*main nav hiden*/
 #main-nav-bar-hidden {
@@ -230,6 +240,20 @@ nav - display set to flex to make it easier for alignment
   color: #39505E;
   margin-right: 1.7rem;
 }
+  .sorting-text {
+    display: inline;
+    font-size: .8rem;
+    font-style: italic;
+    color: #39505E;
+    margin-right: 1.7rem;
+    overflow: scroll;
+  }
+
+  #top-shortcut-link  {
+    color: #F69261;
+    margin: auto;
+    text-decoration: none;
+  }
 
 /*footer*/
 /*form control*/
@@ -269,10 +293,15 @@ button {
 input::placeholder {
   color: #F69261;
 }
+  #selected-category {
+    color: #F69261;
+  }
 
 input[type=submit], input[type=button] {
   border: none;
 }
+  /*footer*/
+  /*form control*/
 
 /*sign-in*/
 input[type=submit] {
@@ -354,6 +383,11 @@ textarea::placeholder {
 #register {
   height: 100vh;
 }
+  .button-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
 #register-btn-submit {
   width: 100%;
