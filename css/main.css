@@ -193,6 +193,7 @@ nav - display set to flex to make it easier for alignment
 
 .orange-button {
   background-color: #F69261;
+  width: 20rem;
 }
 
 #featured-listing {
@@ -265,7 +266,6 @@ input {
 
   text-align: center;
   border: solid 2.5px;
-  border-radius: 5px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
 }
@@ -274,10 +274,10 @@ button {
   width: 100%;
   height: 2rem;
   text-align: center;
-  border-radius: 5px;
   font-size: 1rem;
   border: none;
   color: white;
+  border-radius: 0;
 }
 
 .button-go {
@@ -354,7 +354,6 @@ select {
   color: #F69261;
   text-align: center;
   border: solid 2.5px;
-  border-radius: 5px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
   margin-right: auto;
@@ -366,7 +365,6 @@ textarea {
   height: 5rem;
 
   border: solid 2.5px;
-  border-radius: 5px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
 }
@@ -449,7 +447,6 @@ textarea::placeholder {
   padding: 1rem;
   text-align: right;
   margin-left: auto;
-  border-radius: 5px;
 }
 
 #total-cart-content p {
@@ -512,7 +509,6 @@ textarea::placeholder {
   color: white;
   text-align: center;
   border: solid 2.5px;
-  border-radius: 5px;
   border-color: rgb(100, 128, 140);
   font-size: .8rem;
 }
@@ -521,6 +517,8 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+  width: 20rem;
 }
 
 .input-space {
@@ -560,7 +558,6 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-radius: 5px;
 }
 
 #contact-info-content p {
@@ -646,8 +643,58 @@ textarea::placeholder {
     width: 70%;
   }
 
-  /*homepage feartured*/
+  /*homepage featured*/
   .product-listing {
     width: 45%;
+  }
+
+  .input-space {
+    width: 40rem;
+  }
+
+  #featured-listing-content {
+    width: 40rem;
+  }
+
+  .prod-desc {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 1090px) {
+  /*homepage featured*/
+  .product-listing {
+    width: 30%;
+  }
+
+  .input-space {
+    width: 40rem;
+  }
+
+  #featured-listing-content {
+    width: 60rem;
+  }
+
+  .prod-desc {
+    width: 40rem;
+  }
+}
+
+@media (min-width: 1575px) {
+  /*homepage featured*/
+  .product-listing {
+    width: 23%;
+  }
+
+  .input-space {
+    width: 60rem;
+  }
+
+  #featured-listing-content {
+    width: 80rem;
+  }
+
+  .prod-desc {
+    width: 60rem;
   }
 }
