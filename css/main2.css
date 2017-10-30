@@ -381,7 +381,7 @@ Product List Page
   }
 
   #main-nav {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -392,7 +392,7 @@ Product List Page
   }
 
   #main-nav-bar-hidden {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     border-radius: 0 0 10px 0;
     display: none;
     position: absolute;
