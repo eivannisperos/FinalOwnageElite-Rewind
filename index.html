@@ -14,8 +14,6 @@
     <nav id="main-nav">
       <a class="nav-link mobile-icon-link"><img id="nav-toggle" src="img/menu-toggle.png" alt="menu toggle, press me to show hidden menu links." /></a>
       <div id="main-nav-bar-hidden">
-        <a class="nav-link hidden-link" href="http://www.sfu.ca/~gssekhon/iat339/Rewind-Styleguide/">Style Guide</a>
-        <a class="nav-link hidden-link" href="citations.html">Citations</a>
         <a class="nav-link hidden-link" href="products.html">Products</a>
         <a class="nav-link hidden-link" href="cart.html">Cart</a>
         <a class="nav-link hidden-link" href="contact.html">Contact</a>
@@ -27,6 +25,9 @@
 
       <a class="nav-link" id="home-link-icon" href="#">REWIND</a>
       <a class="nav-link mobile-icon-link" id="search-toggle"><img class="mobile-icon" src="img/search-icon.png" alt="search icon, press me to search for a product"/></a>
+      <form id="search-bar" action="products.html" method="GET ">
+        <input type="text" id="search" name="search" placeholder="search..." />
+      </form>
     </nav>
 
     <section id="about-intro" class="hero-banner">
@@ -77,7 +78,11 @@
     </section>
 
     <section id="top-shortcut" class="footer">
-      <a id="top-shortcut-link" class="nav-link" href="#">▲</a>
+      <a id="top-shortcut-link" href="#">Back to Top</a>
+      <div id="misc-links">
+        <a class="nav-link hidden-link" href="http://www.sfu.ca/~gssekhon/iat339/Rewind-Styleguide/">Style Guide</a>
+        <a class="nav-link hidden-link" href="citations.html">Citations</a>
+      </div>
     </section>
   </body>
 </html>

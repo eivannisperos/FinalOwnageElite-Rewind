@@ -7,16 +7,9 @@ window.onload = function() {
   var mobileIconPadding = document.getElementById('nav-toggle-area');
   var mobileLinksA = document.getElementsByClassName('hidden-link');
   var closeMobileNav = document.getElementById("close-nav");
+  var searchToggle = document.getElementById("search-toggle")
 
   var deleteItemLogo = document.getElementsByClassName('delete-item');
-
-  //sort by var
-  var productListing = document.getElementsByClassName('product-listing');
-  var action = document.getElementsByClassName('action');
-  var thriller = document.getElementsByClassName('thriller');
-
-  var actionbtn = document.getElementById('action-btn');
-  var thrillerbtn = document.getElementById('thriller-btn');
 
   function hideMobileLinks(e) {
     if (e.target != mobileLinks ) {
@@ -51,15 +44,6 @@ window.onload = function() {
     }
   }
 
-  //sort by functions
-  function showAction() {
-    alert(productListing.lenght);
-    for (var i = 0; i < productListing.lenght; i++) {
-      console.log(i);
-    }
-  }
-
-  actionbtn.addEventListener('click', showAction);
 
   // TODO: re-implement default width and margin size of menu and content divs
   checkMobileScreen();
