@@ -119,15 +119,12 @@ section {
 /*footer*/
 #top-shortcut {
   background-color: #39505E;
-  margin: 0;
 }
 
 #top-shortcut-link {
   color: #F69261;
   margin: auto;
-  margin-bottom: 1rem;
   text-decoration: none;
-  font-weight: bold;
 }
 
 /*
@@ -165,14 +162,6 @@ section {
   font-family: 'rewind-font';
   margin: auto;
   margin-top: 0.3em;
-}
-
-#misc-links {
-  margin: auto;
-}
-
-#misc-links a {
-  margin: 0 0.5rem 0 0.5rem;
 }
 
 /*button styles*/
@@ -258,7 +247,6 @@ index.html @ 0px
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-bottom: 2rem;
 }
 
 /******************************************************************
@@ -387,7 +375,7 @@ Product List Page
   }
 
   #main-nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -398,7 +386,7 @@ Product List Page
   }
 
   #main-nav-bar-hidden {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0 0 10px 0;
     display: none;
     position: absolute;
@@ -415,13 +403,6 @@ Product List Page
 
   #close-nav {
     margin-left: auto;
-  }
-
-  #search-bar {
-    width: 50%;
-    position: absolute;
-    right: 5%;
-    transition: 0.4s ease-in;
   }
 
   /*
@@ -506,12 +487,6 @@ Product List Page
   }
 }
 
-@media (min-width: 500px) {
-  #category-selection-links {
-    width: 80%;
-  }
-}
-
 @media (min-width: 720px) {
 
   /*structure*/
@@ -521,10 +496,6 @@ Product List Page
 
   .col60-percent-text {
     width: 60%;
-  }
-
-  .button-go {
-    background-color: #F69261;
   }
 
   /*nav*/
@@ -589,7 +560,7 @@ Product List Page
   product page list @ 768px
   **********************************************************/
   #category-selection-links {
-    width: 20rem;
+    width: 25%;
   }
 }
 
