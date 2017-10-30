@@ -10,13 +10,20 @@ window.onload = function() {
 
   var deleteItemLogo = document.getElementsByClassName('delete-item');
 
-  //sort by var
+  //sort-by variables
   var productListing = document.getElementsByClassName('product-listing');
   var action = document.getElementsByClassName('action');
   var thriller = document.getElementsByClassName('thriller');
 
   var actionbtn = document.getElementById('action-btn');
   var thrillerbtn = document.getElementById('thriller-btn');
+
+  //footer and height of listing content
+  var footer = document.getElementById('top-shortcut');
+  var productListingDiv = document.getElementById('featured-listing-content');
+  var intViewportHeight = window.innerHeight;
+  var productListingHeight = productListingDiv.offsetHeight;
+  var footerHeight = footer.offsetHeight;
 
   function hideMobileLinks(e) {
     if (e.target != mobileLinks ) {
@@ -53,16 +60,36 @@ window.onload = function() {
 
   //sort by functions
   function showAction() {
-    alert(productListing.lenght);
-    for (var i = 0; i < productListing.lenght; i++) {
-      console.log(i);
+    for (var i = 0; i < productListing.length; i++) {
+      if (!productListing[i].classList.contains('action')) {
+        productListing[i].style.display = 'none';
+      } else {
+        productListing[i].style.display = 'block';
+      }
     }
   }
 
+  function showThriller() {
+    for (var i = 0; i < productListing.length; i++) {
+      if (!productListing[i].classList.contains('thriller')) {
+        productListing[i].style.display = 'none';
+      } else {
+        productListing[i].style.display = 'block';
+      }
+    }
+  }
+
+  //check height of feature listing
+  function checkFeaturedListingHeight() {
+    productListingDiv.style.paddingBottom = footerHeight;
+  }
+
   actionbtn.addEventListener('click', showAction);
+  thrillerbtn.addEventListener('click', showThriller);
 
   // TODO: re-implement default width and margin size of menu and content divs
   checkMobileScreen();
+  checkFeaturedListingHeight();
   window.onresize = function() {
     checkMobileScreen();
   }

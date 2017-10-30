@@ -120,6 +120,7 @@ section {
 /*footer*/
 #top-shortcut {
   background-color: #39505E;
+  margin: 0;
 }
 
 #top-shortcut-link {
@@ -243,6 +244,7 @@ index.html @ 0px
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding-bottom: 2rem;
 }
 
 /******************************************************************
