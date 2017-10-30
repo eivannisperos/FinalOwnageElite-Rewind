@@ -127,6 +127,10 @@ section {
   text-decoration: none;
 }
 
+.no-space-bot {
+  margin-bottom: 0;
+}
+
 /*
   two column for two elements side by side, where by one is larger than the other
 */
@@ -430,6 +434,10 @@ Product List Page
     background-color: #F69261;
   }
 
+  .prod-detail-button {
+    width: 100%;
+  }
+
   /*
    - text styles
   */
@@ -549,6 +557,10 @@ Product List Page
     width: 45%;
   }
 
+  .prod-detail-button {
+    width: 45%;
+  }
+
   /*********************************************************
   resgister @ 768px
   **********************************************************/
@@ -572,6 +584,10 @@ Product List Page
   .product-listing {
     width: 30%;
   }
+
+  .prod-detail-button {
+    width: 30%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -584,6 +600,10 @@ Product List Page
   **********************************************************/
 
   .product-listing {
+    width: 23%;
+  }
+
+  .prod-detail-button {
     width: 23%;
   }
 }
