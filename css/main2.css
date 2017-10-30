@@ -53,7 +53,7 @@ img {
 code {
   display: block;
   background-color: #F69261;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 1rem;
   color: white;
   margin: 1rem 0 1rem 0;
@@ -87,7 +87,6 @@ section {
 
 .sub-section {
   background-color: #F2F2F2;
-  border-radius: 5px;
   padding: 1rem;
 }
 
@@ -109,7 +108,7 @@ section {
   align-items: flex-end;
 }
 
-#cart-img {
+.cart-img {
   min-width: 45%;
 }
 
@@ -170,7 +169,7 @@ section {
 button, .button-go, .button-back {
   height: 2rem;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 1rem;
   border: none;
   color: white;
@@ -184,7 +183,7 @@ input {
   text-align: left;
   color: black;
   border: solid 2px;
-  border-radius: 5px;
+  border-radius: 0px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
   margin: 0.5rem 0 0.5rem 0;
@@ -194,7 +193,7 @@ select {
   color: #F69261;
   text-align: center;
   border: solid 2px;
-  border-radius: 5px;
+  border-radius: 0px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
   margin-right: auto;
@@ -202,11 +201,15 @@ select {
 
 textarea {
   border: solid 2px;
-  border-radius: 5px;
+  border-radius: 0px;
   border-color: rgb(100, 128, 140);
   font-size: 1rem;
   padding: 0.5rem;
 }
+
+
+/* ::placeholder may show up as error on validator but works as intended.
+any error is a compatability error */
 
 textarea::placeholder {
   font-family: 'Roboto', sans-serif;
@@ -225,6 +228,7 @@ input::placeholder {
   font-family: 'figcaption-font', sans-serif;
   font-size: 0.8rem;
   color: #7A7A7A;
+  margin: auto;
 }
 
 .product-list-title {
@@ -242,7 +246,7 @@ index.html @ 0px
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /******************************************************************
@@ -382,7 +386,7 @@ Product List Page
   }
 
   #main-nav-bar-hidden {
-      background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 0 0 10px 0;
     display: none;
     position: absolute;
@@ -467,6 +471,7 @@ Product List Page
 
   .product-list-img {
     margin-bottom: 1rem;
+    box-shadow: 5px 5px #F69261;
   }
 
   .product-price {
@@ -474,8 +479,9 @@ Product List Page
     font-size: 1.2rem;
   }
 
-  #product-title-genre {
+  .product-title-genre {
     width: 100%;
+    display: flex;
     flex-direction: row;
     align-items: center;
   }
@@ -490,11 +496,6 @@ Product List Page
 
   .col60-percent-text {
     width: 60%;
-  }
-
-  .button-go {
-    width: 35%;
-    background-color: #F69261;
   }
 
   /*nav*/
